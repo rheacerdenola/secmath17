@@ -1,0 +1,14 @@
+---
+title: "R for Data Science (2e): Activity in Sec Math 17"
+author: "rhea cerdenola"
+format: html
+editor: visual
+---
+
+# Introduction
+
+## What Will You Learn
+
+Review the pipeline because sir will make it a part of our exam.
+
+![](r4dspic/r4dspic.png)
