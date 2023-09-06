@@ -1,0 +1,67 @@
+---
+title: "Handson Programming with R: Activity"
+author: "Rheamae C."
+format: html
+editor: visual
+---
+
+# Chapter 1 The Very Basics
+
+```{r}
+1+1
+```
+
+```{r}
+100:130
+```
+
+```{r}
+a<- 1
+a
+```
+
+```{r}
+2*3
+4-1
+```
+
+```{r}
+250-50
+
+```
+
+```{r}
+250/2
+```
+
+```{r}
+a+2
+a/1
+```
+
+# Creating A Die
+
+```{r}
+die <- 1:6
+```
+
+```{r}
+ls()
+```
+
+```{r}
+b<- die-1
+```
+
+```{r}
+die/2
+```
+
+```{r}
+die*die
+```
+
+```{r}
+abc<- 1:5
+c<-die*abc
+```
