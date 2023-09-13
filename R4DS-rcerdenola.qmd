@@ -12,3 +12,20 @@ editor: visual
 Review the pipeline because sir will make it a part of our exam.
 
 ![](r4dspic/r4dspic.png)
+
+pipeling
+
+## The Tidyverse
+
+To install the tidyverse package use the code:
+
+`install.packages("tidyverse")`.
+
+```{r}
+# loading the tidyverse package
+library(tidyverse)
+```
+
+We also installed other packages by typing in the console the following code:
+
+`install.packages(c("arrow", "babynames", "curl", "duckdb", "gapminder", "ggrepel", "ggridges", "ggthemes", "hexbin", "janitor", "Lahman", "leaflet", "maps", "nycflights13", "openxlsx", "palmerpenguins","repurrrsive", "tidymodels", "writexl"))`
