@@ -1,0 +1,78 @@
+---
+title: "R for Data Science (2e): Activity in Sec Math 17"
+author: "rhea cerdenola"
+format: html
+editor: visual
+---
+
+# Introduction
+
+## What Will You Learn
+
+Review the pipeline because sir will make it a part of our exam.
+
+![](r4dspic/r4dspic.png)
+
+pipeling
+
+## The Tidyverse
+
+To install the tidyverse package use the code:
+
+`install.packages("tidyverse")`.
+
+```{r}
+#|label: loading the tidyverse package
+library(tidyverse)
+```
+
+We also installed other packages by typing in the console the following code:
+
+`install.packages(c("arrow", "babynames", "curl", "duckdb", "gapminder", "ggrepel", "ggridges", "ggthemes", "hexbin", "janitor", "Lahman", "leaflet", "maps", "nycflights13", "openxlsx", "palmerpenguins","repurrrsive", "tidymodels", "writexl"))`
+
+# Data Visualization
+
+::: callout-note
+## Reminder
+
+First we load the tidyverse package
+:::
+
+First load the `tidyverse` package
+
+```{r}
+#|label: load-packages
+
+library(palmerpenguins)
+library(ggthemes)
+```
+
+## First Steps
+
+```{r}
+penguins
+```
+
+```{r}
+glimpse(penguins)
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+ggplot(
+  data = penguins,
+  mapping = aes(x = flipper_length_mm, y = body_mass_g)
+) +
+  geom_point(aes(color = species, shape = species)) +
+  geom_smooth(method = "lm") +
+  labs(
+    title = "Body mass and flipper length",
+    subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+    x = "Flipper length (mm)", y = "Body mass (g)",
+    color = "Species", shape = "Species"
+  ) +
+  scale_color_colorblind()
+```
+
